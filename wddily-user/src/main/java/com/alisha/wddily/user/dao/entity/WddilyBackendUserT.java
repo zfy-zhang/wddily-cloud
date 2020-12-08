@@ -1,4 +1,4 @@
-package com.alisha.wddily.common.entity;
+package com.alisha.wddily.user.dao.entity;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -9,7 +9,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author <a href="mailto:zfy_zang@163.com">Vincent</a>
- * @since 2020-12-07
+ * @since 2020-12-08
  */
 public class WddilyBackendUserT extends Model<WddilyBackendUserT> {
 
