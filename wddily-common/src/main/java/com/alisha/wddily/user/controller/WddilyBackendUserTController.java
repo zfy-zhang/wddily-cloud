@@ -1,7 +1,6 @@
-package controller;
+package com.alisha.wddily.user.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
 
@@ -11,10 +10,10 @@ import org.springframework.stereotype.Controller;
  * </p>
  *
  * @author <a href="mailto:zfy_zang@163.com">Vincent</a>
- * @since 2020-12-07
+ * @since 2020-12-08
  */
 @Controller
-@RequestMapping("/wddilyBackendUserT")
+//@RequestMapping("/wddilyBackendUserT")
 public class WddilyBackendUserTController {
 
 }
