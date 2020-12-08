@@ -1,8 +1,8 @@
 package com.alisha.wddily.user.dao;
 
-import com.alisha.WddilyUserApplicationTests;
-import com.alisha.wddily.common.entity.WddilyBackendUserT;
-import com.alisha.wddily.common.mapper.WddilyBackendUserTMapper;
+import com.alisha.wddily.WddilyUserApplicationTests;
+import com.alisha.wddily.user.dao.entity.WddilyBackendUserT;
+import com.alisha.wddily.user.dao.mapper.WddilyBackendUserTMapper;
 import com.alisha.wddily.utils.util.MD5Util;
 import org.junit.Test;
 
