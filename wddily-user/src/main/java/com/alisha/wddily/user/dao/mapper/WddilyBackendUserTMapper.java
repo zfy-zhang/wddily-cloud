@@ -2,6 +2,7 @@ package com.alisha.wddily.user.dao.mapper;
 
 import com.alisha.wddily.user.dao.entity.WddilyBackendUserT;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>

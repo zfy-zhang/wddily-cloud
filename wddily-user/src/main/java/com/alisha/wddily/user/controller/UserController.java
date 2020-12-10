@@ -4,6 +4,7 @@ import com.alisha.wddily.user.controller.vo.LoginReqVO;
 import com.alisha.wddily.user.service.UserServiceAPI;
 import com.alisha.wddily.utils.common.vo.BaseResponseVO;
 import com.alisha.wddily.utils.exception.CommonServiceException;
+import com.alisha.wddily.utils.properties.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,9 +37,13 @@ public class UserController {
         reqVO.checkParam();
 
         String userId = userServiceAPI.checkUserLogin(reqVO.getUsername(), reqVO.getPassword());
+
+        JwtTokenUtil jwtTokenUtil = new JwtTokenUtil();
+        String randomKey = jwtTokenUtil.getRandomKey();
+        String token = jwtTokenUtil.generateToken(userId, randomKey);
         Map<String, String> result = new HashMap<>();
-        result.put("randomKey", "");
-        result.put("token", "");
+        result.put("randomKey", randomKey);
+        result.put("token", token);
         return BaseResponseVO.success(result);
     }
 }
